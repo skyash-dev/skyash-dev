@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* styles.css */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Satoshi-Variable'; /* Use a name for your font */
+  src: url('/public/fonts/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('ttf'); /* Adjust the filename and format accordingly */
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Satoshi-Variable', sans-serif; /* Use the font-family name you specified */
 }
+
+
+.no-scrollbar::-webkit-scrollbar { 
+  display: none; 
+} 
