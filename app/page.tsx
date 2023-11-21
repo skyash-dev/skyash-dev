@@ -24,17 +24,17 @@ export default async function Home() {
     }
   });
   return (
-    <div className="main h-full w-full ">
+    <div className="main h-full w-full">
       <div className="hero flex items-center flex-col">
-        <div className="text-white flex flex-col my-6 py-6 w-[36%]">
+        <div className="text-white flex flex-col my-6 py-6 w-[90%] md:w-[36%]">
           <span className="font-semibold text-xl py-2">Yash</span>
-          <span className="opacity-70 text-base">
+          <span className="opacity-70 text-base font-light">
             jack of all trades and master of one! mostly revolving around
             technology, science and startups. in the loop of planning, building
             and shipping.
           </span>
         </div>
-        <div className="blogs text-white w-[36%] h-[340px] flex flex-col text-xs tracking-wider font-[530] overflow-y-scroll no-scrollbar">
+        <div className="blogs text-white w-[90%] md:w-[36%] h-[340px] flex flex-col text-xs tracking-wider font-[530] overflow-y-scroll no-scrollbar">
           {blogItems.map((item: any, index: number) => {
             return (
               <>

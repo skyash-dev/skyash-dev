@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="work text-white">
-      <div className="head py-10 px-20 flex flex-col w-1/2">
+      <div className="head py-10 md:px-20 px-8 flex flex-col md:w-1/2 w-full">
         <span className="text-[1.6rem]">Highlights</span>
         <span className="opacity-60 py-2 font-[50] text-[0.95rem]">
           My work is deeply immersed in the fusing of technology and design.
@@ -24,7 +24,7 @@ export default function Page() {
         {projects.map((project, index) => {
           return (
             <div className="flex flex-row h-full items-center">
-              <div className="w-20 flex flex-col text-center">
+              <div className="md:w-20 w-10 flex flex-col text-center">
                 {project.tags.map((tag) => {
                   return (
                     <span className="my-8 -rotate-90 opacity-60 text-sm text-bold hover:opacity-80 cursor-pointer leading-10">
@@ -34,7 +34,7 @@ export default function Page() {
                 })}
               </div>
               <div
-                className="project px-14 py-12 flex flex-col w-1/2"
+                className="project pl-4 pr-6 md:px-14 py-12 flex flex-col md:w-1/2"
                 key={index}
               >
                 <Link
