@@ -8,11 +8,11 @@ export default function NotionPage({ recordMap }: any) {
   const Code = dynamic(() =>
     import("react-notion-x/build/third-party/code").then((m) => m.Code)
   );
-  const Collection = dynamic(() =>
-    import("react-notion-x/build/third-party/collection").then(
-      (m) => m.Collection
-    )
-  );
+  // const Collection = dynamic(() =>
+  //   import("react-notion-x/build/third-party/collection").then(
+  //     (m) => m.Collection
+  //   )
+  // );
   const Equation = dynamic(() =>
     import("react-notion-x/build/third-party/equation").then((m) => m.Equation)
   );

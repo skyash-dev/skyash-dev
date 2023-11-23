@@ -11,5 +11,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   const recordMap = await api.getPage(post.id);
 
-  return <NotionPage recordMap={recordMap} />;
+  return (
+    <div className="blog my-6">
+      <NotionPage recordMap={recordMap} />
+    </div>
+  );
 }
