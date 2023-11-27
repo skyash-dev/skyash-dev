@@ -4,15 +4,24 @@ import { NotionRenderer } from "react-notion-x";
 import "react-notion-x/src/styles.css";
 import dynamic from "next/dynamic";
 
-export default function NotionPage({ recordMap }: any) {
+// core styles shared by all of react-notion-x (required)
+import "react-notion-x/src/styles.css";
+
+// used for code syntax highlighting (optional)
+import "prismjs/themes/prism-tomorrow.css";
+
+// used for rendering equations (optional)
+import "katex/dist/katex.min.css";
+
+export default function NotionPage({ recordMap, isCollection = true }: any) {
   const Code = dynamic(() =>
     import("react-notion-x/build/third-party/code").then((m) => m.Code)
   );
-  // const Collection = dynamic(() =>
-  //   import("react-notion-x/build/third-party/collection").then(
-  //     (m) => m.Collection
-  //   )
-  // );
+  const Collection = dynamic(() =>
+    import("react-notion-x/build/third-party/collection").then(
+      (m) => m.Collection
+    )
+  );
   const Equation = dynamic(() =>
     import("react-notion-x/build/third-party/equation").then((m) => m.Equation)
   );
@@ -25,15 +34,26 @@ export default function NotionPage({ recordMap }: any) {
 
   return (
     <NotionRenderer
+      disableHeader={true}
+      fullPage={isCollection}
       recordMap={recordMap}
       darkMode={true}
-      components={{
-        Code,
-        // Collection,
-        Equation,
-        Modal,
-        Image,
-      }}
+      components={
+        isCollection
+          ? {
+              Code,
+              Collection,
+              Equation,
+              Modal,
+              Image,
+            }
+          : {
+              Code,
+              Equation,
+              Modal,
+              Image,
+            }
+      }
     />
   );
 }

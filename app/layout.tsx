@@ -27,55 +27,57 @@ export default function RootLayout({
             <div className="w-1/2 flex justify-evenly items-center cursor-pointer my-2">
               <span
                 className={`${
-                  currentPath == "/" ? "bg-gray-600 opacity-80" : ""
-                } px-4 py-1 text-center rounded-md transition-all opacity-60 hover:opacity-80 border-none`}
+                  currentPath == "/" ? "bg-gray-600 text-white" : ""
+                } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
               >
-                <Link href="/">home</Link>
+                <Link href="/">Home</Link>
               </span>
               <span
                 className={`${
-                  currentPath == "/work" ? "bg-gray-600 opacity-80" : ""
-                } px-4 py-1 text-center rounded-md transition-all opacity-60 hover:opacity-80 border-none`}
+                  currentPath == "/work" ? "bg-gray-600 text-white" : ""
+                } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
               >
-                <Link href="/work/">work</Link>
+                <Link href="/work/">Work</Link>
               </span>
               <span
                 className={`${
                   currentPath == "/blog/microblog-83d14"
-                    ? "bg-gray-600 opacity-80"
+                    ? "bg-gray-600 text-white"
                     : ""
-                } px-4 py-1 text-center rounded-md transition-all opacity-60 hover:opacity-80 border-none`}
+                } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
               >
-                <Link href="/blog/microblog-83d14/">microblog</Link>
+                <Link href="/blog/microblog-83d14/">Microblog</Link>
               </span>
               <span
                 className={`${
                   currentPath == "/blog/photographs-0e974"
-                    ? "bg-gray-600  opacity-80"
+                    ? "bg-gray-600  text-white"
                     : ""
-                } px-4 py-1 text-center rounded-md transition-all opacity-60 hover:opacity-80 border-none`}
+                } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
               >
-                <Link href="/blog/photographs-0e974/">photography</Link>
+                <Link href="/blog/photographs-0e974/">Photography</Link>
               </span>
             </div>
             <div className="">
-              <span className="opacity-60 cursor-default">elsewhere -- </span>
-              <span className="px-3 opacity-60 cursor-pointer hover:opacity-100">
+              <span className="text-[#a2a2a2] cursor-default">
+                elsewhere --{" "}
+              </span>
+              <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
                 <Link href="https://www.x.com/champyash010/" target="_blank">
-                  x
+                  X
                 </Link>
               </span>
-              <span className="px-3 opacity-60 cursor-pointer hover:opacity-100">
+              <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
                 <Link href="https://www.github.com/CHAMP010/" target="_blank">
-                  github
+                  GitHub
                 </Link>
               </span>
-              <span className="px-3 opacity-60 cursor-pointer hover:opacity-100">
+              <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
                 <Link
                   href="https://www.linkedin.com/in/yash-soni-62b200237/"
                   target="_blank"
                 >
-                  linkedin
+                  Linkedin
                 </Link>
               </span>
             </div>

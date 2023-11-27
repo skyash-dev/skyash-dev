@@ -3,8 +3,8 @@ import Link from "next/link";
 import { getPages } from "@/utils/notion";
 
 export default async function Home() {
-  const pages = await getPages();
   let blogItems: any = [];
+  const pages = await getPages();
   pages.map((page: any) => {
     if (
       page.properties.Category["select"]["name"] !== "Photos" &&
@@ -24,11 +24,11 @@ export default async function Home() {
     }
   });
   return (
-    <div className="main h-full w-full">
+    <div className="main h-full w-full text-base">
       <div className="hero flex items-center flex-col">
         <div className="text-white flex flex-col my-6 py-6 w-[90%] md:w-[36%]">
           <span className="font-semibold text-xl py-2">Yash</span>
-          <span className="opacity-70 text-base font-light">
+          <span className="text-[#a2a2a2] text-base font-light">
             jack of all trades and master of one! mostly revolving around
             technology, science and startups. in the loop of planning, building
             and shipping.
@@ -43,10 +43,10 @@ export default async function Home() {
                   className="flex flex-row items-center justify-between "
                   key={index}
                 >
-                  <span className="opacity-100 cursor-pointer hover:opacity-60 transition-all pt-4 pb-2 px-1">
+                  <span className="cursor-pointer hover:text-[#a2a2a2] transition-all pt-4 pb-2 px-1">
                     {item.title}
                   </span>
-                  <span className="opacity-60">
+                  <span className="text-[#a2a2a2] w-1/4 flex justify-end">
                     {`${item.category} ~ ${item.year}`}
                   </span>
                 </Link>

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "skyash",
 };
 
-export default function Page() {
+export default async function Page() {
   return (
     <div className="work text-white">
       <div className="head py-10 md:px-20 px-8 flex flex-col md:w-1/2 w-full">
         <span className="text-[1.6rem]">Highlights</span>
-        <span className="opacity-60 py-2 font-[50] text-[0.95rem]">
+        <span className="text-[#a2a2a2] py-2 font-[50] text-[0.95rem]">
           My work is deeply immersed in the fusing of technology and design.
           I've created products, brands and solutions for various organizations
           and passion projects for over five years. <br />
@@ -27,7 +27,7 @@ export default function Page() {
               <div className="md:w-20 w-10 flex flex-col text-center">
                 {project.tags.map((tag) => {
                   return (
-                    <span className="my-8 -rotate-90 opacity-60 text-sm text-bold hover:opacity-80 cursor-pointer leading-10">
+                    <span className="my-8 -rotate-90 text-[#a2a2a2] text-sm text-bold hover:text-[#a2a2a2] cursor-pointer leading-10">
                       {tag}
                     </span>
                   );
@@ -43,7 +43,7 @@ export default function Page() {
                 >
                   {project.title}
                 </Link>
-                <span className="opacity-60 text-[0.98rem] font-[50] py-3">
+                <span className="text-[#a2a2a2] text-[0.98rem] font-[50] py-3">
                   {project.description}
                 </span>
                 <Image
