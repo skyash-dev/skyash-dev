@@ -27,9 +27,12 @@ export default async function Page() {
               <div className="md:w-20 w-10 flex flex-col text-center">
                 {project.tags.map((tag) => {
                   return (
-                    <span className="my-8 -rotate-90 text-[#a2a2a2] text-sm text-bold hover:text-[#a2a2a2] cursor-pointer leading-10">
+                    <Link
+                      href={project.source ? project.source : ""}
+                      className="my-8 -rotate-90 text-[#a2a2a2] text-sm text-bold hover:text-[#a2a2a2] cursor-pointer leading-10"
+                    >
                       {tag}
-                    </span>
+                    </Link>
                   );
                 })}
               </div>
@@ -38,7 +41,7 @@ export default async function Page() {
                 key={index}
               >
                 <Link
-                  href={project.source ? project.source : ""}
+                  href={project.visit ? project.visit : ""}
                   className=" cursor-pointerpx-2 text-2xl font-medium py-3"
                 >
                   {project.title}
