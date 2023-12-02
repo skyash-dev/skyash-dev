@@ -45,13 +45,11 @@ export default function NotionPage({ recordMap, isCollection = true }: any) {
               Collection,
               Equation,
               Modal,
-              Image,
             }
           : {
               Code,
               Equation,
               Modal,
-              Image,
             }
       }
     />

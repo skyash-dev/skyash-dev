@@ -20,8 +20,11 @@ body {
   display: none; 
 }
 
-.notion-text{
+.notion-page-content-inner{
   color: #a2a2a2;
+}
+.notion-h{
+  color: #FFFFFFE6;
 }
 .notion-page-scroller, .notion-frame{
   background-color: #1a1818;

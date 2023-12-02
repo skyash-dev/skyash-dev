@@ -46,7 +46,7 @@ export default async function Home() {
                   <span className="cursor-pointer hover:text-[#a2a2a2] transition-all pt-4 pb-2 px-1">
                     {item.title}
                   </span>
-                  <span className="text-[#a2a2a2] w-1/4 flex justify-end">
+                  <span className="text-[#a2a2a2] w-[160px] flex justify-end">
                     {`${item.category} ~ ${item.year}`}
                   </span>
                 </Link>

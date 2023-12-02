@@ -5,6 +5,7 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -14,6 +15,24 @@ export default function RootLayout({
   const currentPath = usePathname();
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="gtag-manager"
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+
+        <Script id="g-tag" strategy="lazyOnload">
+          {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+        </Script>
+      </head>
       <body className="h-full w-full bg-[#1a1818]">
         <div className="flex navbar text-white py-2 text-sm font-[50] flex-col md:flex-row items-center md:px-6">
           <Image
