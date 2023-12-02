@@ -56,7 +56,7 @@ export default async function Home() {
             );
           })}
         </div>
-        <div className="px-10">
+        <div className="md:px-10">
           <Page></Page>
         </div>
       </div>
