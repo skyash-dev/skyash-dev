@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
+import Head from "next/head";
 
 export default function RootLayout({
   children,
@@ -15,7 +16,7 @@ export default function RootLayout({
   const currentPath = usePathname();
   return (
     <html lang="en">
-      <head>
+      <Head>
         <Script
           id="gtag-manager"
           strategy="lazyOnload"
@@ -32,7 +33,7 @@ export default function RootLayout({
                     });
                 `}
         </Script>
-      </head>
+      </Head>
       <body className="h-full w-full bg-[#1a1818]">
         <div className="flex navbar text-white py-2 text-sm font-[50] flex-col md:flex-row items-center md:px-6">
           <Image
