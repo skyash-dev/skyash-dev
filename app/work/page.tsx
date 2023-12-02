@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <div className="work text-white">
+    <div className="work text-white flex flex-col items-center">
       <div className="head py-10 md:px-20 px-8 flex flex-col md:w-1/2 w-full">
         <span className="text-[1.6rem]">Highlights</span>
         <span className="text-[#a2a2a2] py-2 font-[50] text-[0.95rem]">

@@ -16,15 +16,14 @@ export default function RootLayout({
   const currentPath = usePathname();
   return (
     <html lang="en">
-      <Head>
-        <Script
-          id="gtag-manager"
-          strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
+      <Script
+        id="gtag-manager"
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
 
-        <Script id="g-tag" strategy="lazyOnload">
-          {`
+      <Script id="g-tag" strategy="lazyOnload">
+        {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
@@ -32,8 +31,7 @@ export default function RootLayout({
                     page_path: window.location.pathname,
                     });
                 `}
-        </Script>
-      </Head>
+      </Script>
       <body className="h-full w-full bg-[#1a1818]">
         <div className="flex navbar text-white py-2 text-sm font-[50] flex-col md:flex-row items-center md:px-6">
           <Image

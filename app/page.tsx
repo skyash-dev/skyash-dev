@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getPages } from "@/utils/notion";
+import Page from "./work/page";
 
 export default async function Home() {
   let blogItems: any = [];
@@ -34,7 +35,7 @@ export default async function Home() {
             and shipping.
           </span>
         </div>
-        <div className="blogs text-white w-[90%] md:w-[36%] h-[340px] flex flex-col text-xs tracking-wider font-[530] overflow-y-scroll no-scrollbar">
+        <div className="blogs text-white w-[90%] md:w-[36%] min-h-[100px] flex flex-col text-xs tracking-wider font-[530] overflow-y-scroll no-scrollbar">
           {blogItems.map((item: any, index: number) => {
             return (
               <>
@@ -54,6 +55,9 @@ export default async function Home() {
               </>
             );
           })}
+        </div>
+        <div className="px-10">
+          <Page></Page>
         </div>
       </div>
     </div>
