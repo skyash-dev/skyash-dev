@@ -15,12 +15,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     <div className="blog my-6">
       <NotionPage
         recordMap={recordMap}
-        isCollection={
-          params.slug !== "photographs-0e974" &&
-          params.slug !== "microblog-83d14"
-            ? true
-            : false
-        }
+        isCollection={params.slug !== "photographs-0e974" ? true : false}
       />
     </div>
   );

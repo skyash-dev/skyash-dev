@@ -58,13 +58,9 @@ export default function RootLayout({
                 <Link href="/work/">Work</Link>
               </span>
               <span
-                className={`${
-                  currentPath == "/blog/microblog-83d14"
-                    ? "bg-gray-600 text-white"
-                    : ""
-                } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
+                className={`px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
               >
-                <Link href="/blog/microblog-83d14/">Microblog</Link>
+                <Link href="https://streams.place/skyash">Microblog</Link>
               </span>
               <span
                 className={`${

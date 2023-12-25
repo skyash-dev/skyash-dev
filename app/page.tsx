@@ -9,8 +9,7 @@ export default async function Home() {
   pages.map((page: any) => {
     if (
       page.properties.Category["select"]["name"] !== "Photos" &&
-      page.properties.Category["select"]["name"] !== "Work" &&
-      page.properties.Category["select"]["name"] !== "Microblog"
+      page.properties.Category["select"]["name"] !== "Work"
     ) {
       const blogItem = {
         title: page.properties.Title["title"][0]["plain_text"],
