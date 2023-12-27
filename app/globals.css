@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 /* styles.css */
-
-@font-face {
-  font-family: 'Satoshi-Variable'; /* Use a name for your font */
-  src: url('/public/fonts/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('ttf'); /* Adjust the filename and format accordingly */
-  font-weight: normal;
-  font-style: normal;
-}
+ 
 
 body {
-  font-family: 'Satoshi-Variable', sans-serif; /* Use the font-family name you specified */
+  /* font-size: larger;
+  font-family: 'Satoshi-Variable', sans-serif; Use the font-family name you specified */
+  font-family: 'Satoshi', sans-serif;
 }
 
 

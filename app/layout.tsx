@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
-import Head from "next/head";
 
 export default function RootLayout({
   children,
@@ -32,8 +31,14 @@ export default function RootLayout({
                     });
                 `}
       </Script>
-      <body className="h-full w-full bg-[#1a1818]">
-        <div className="flex navbar text-white py-2 text-sm font-[50] flex-col md:flex-row items-center md:px-6">
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap"
+          rel="stylesheet"
+        ></link>
+      </head>
+      <body className="h-full w-full bg-[#1a1818] text-[12px] md:text-[15px]">
+        <div className="flex navbar text-white py-2 font-[50] flex-col md:flex-row items-center md:px-6">
           <Image
             src="/images/skyash.jpeg"
             className="rounded-md hover:scale-110 transition-all"

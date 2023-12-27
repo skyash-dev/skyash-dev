@@ -24,7 +24,7 @@ export default async function Home() {
     }
   });
   return (
-    <div className="main h-full w-full text-base">
+    <div className="main h-full w-full">
       <div className="hero flex items-center flex-col">
         <div className="text-white flex flex-col my-6 py-6 w-[90%] md:w-[36%]">
           <span className="font-semibold text-xl py-2">Yash</span>
