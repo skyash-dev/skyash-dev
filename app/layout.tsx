@@ -37,7 +37,7 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="h-full w-full bg-[#1a1818] text-[12px] md:text-[15px]">
+      <body className="h-full w-full bg-[#1a1818] text-[12px] md:text-[14px]">
         <div className="flex navbar text-white py-2 font-[50] flex-col md:flex-row items-center md:px-6">
           <Image
             src="/images/skyash.jpeg"

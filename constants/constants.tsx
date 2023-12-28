@@ -28,12 +28,22 @@ export const projects = [
     id: 2,
   },
   {
+    title: "Wheel Roll!",
+    description:
+      "Exploring villages in summer, saw kids playing with wheel and thought to turn it into a game. Developed it using UnityEnging.",
+    image: "/images/project_11.png",
+    tags: ["C#", "Unity", "JS"],
+    visit:
+      "https://play.google.com/store/apps/details?id=com.SkyFlyGames.WheelRoll/",
+    id: 3,
+  },
+  {
     title: "NeuronAIO",
     description:
       "Added some models and features using ReactJS in NeuronAIO electron desktop app.",
     image: "/images/project_2.png",
     tags: ["React"],
-    id: 3,
+    id: 4,
   },
   {
     title: "Kalam",
@@ -41,7 +51,7 @@ export const projects = [
       "From technologies like React and other libraries developed CRM admin dashboard called KALAM having MongoDB as database.",
     image: "/images/project_3.png",
     tags: ["React", "MongoDB"],
-    id: 4,
+    id: 5,
   },
   {
     title: "Trello Clone",
@@ -50,7 +60,7 @@ export const projects = [
     image: "/images/project_4.png",
     tags: ["HTML", "CSS", "JS"],
     visit: "https://champ010.github.io/karlo.github.io/",
-    id: 5,
+    id: 6,
   },
   {
     title: "CRM Admin",
@@ -58,7 +68,7 @@ export const projects = [
       "A React application for businesses to help with Customer Relationship Management. The app contains advance UI elements like dropdown, profile, analytics etc. It allows businesses to keep track of their progress through analytical overview",
     image: "/images/project_5.png",
     tags: ["React", "JavaScript", "CSS", "Node"],
-    id: 6,
+    id: 7,
   },
   {
     title: "CHAMP-Keep",
@@ -68,7 +78,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JS"],
     source: "https://github.com/CHAMP010/keep.github.io",
     visit: "https://champ010.github.io/keep.github.io",
-    id: 7,
+    id: 8,
   },
   {
     title: "Book Store",
@@ -76,7 +86,7 @@ export const projects = [
       "The app is developed as Book Store using ReactJS. It is a client project done by me. It is a simple frontend with some functionalities like search book, add to cart, login etc.",
     image: "/images/project_7.png",
     tags: ["React", "Node", "CSS", "Mongo"],
-    id: 8,
+    id: 9,
   },
   {
     title: "To-Do List",
@@ -84,7 +94,7 @@ export const projects = [
       "To-Do List App Developed using HTML, JS and CSS with simple UI which is easy to navigate",
     image: "/images/project_8.png",
     tags: ["HTML", "CSS", "JS"],
-    id: 9,
+    id: 10,
   },
   {
     title: "Food App",
@@ -92,6 +102,6 @@ export const projects = [
     image: "/images/project_9.png",
     tags: ["React", "CSS", "Node", "Mongo", "Socket.io"],
     visit: "https://onesta-patan.herokuapp.com/",
-    id: 10,
+    id: 11,
   },
 ];
