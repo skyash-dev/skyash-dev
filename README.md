@@ -8,7 +8,7 @@
 
 - 🌱 I’m currently learning **AI**
 
-- 👨‍💻 All of my projects are available at [[https://heyiamyash.netlify.app](https://skyash101.vercel.app/)]
+- 👨‍💻 All of my projects are available at [https://skyash101.vercel.app/](https://skyash101.vercel.app/)
 
 - 💬 Ask me about **Javascript, Python, Typescript and React**
 
