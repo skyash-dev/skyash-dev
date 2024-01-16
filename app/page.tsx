@@ -7,10 +7,7 @@ export default async function Home() {
   let blogItems: any = [];
   const pages = await getPages();
   pages.map((page: any) => {
-    if (
-      page.properties.Category["select"]["name"] !== "Photos" &&
-      page.properties.Category["select"]["name"] !== "Work"
-    ) {
+    if (page.properties.Category.select.name !== "Photos") {
       const blogItem = {
         title: page.properties.Title["title"][0]["plain_text"],
         category: page.properties.Category["select"]["name"],
