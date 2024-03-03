@@ -1,11 +1,11 @@
 import { projects } from "@/constants/constants";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "skyash",
-};
+// export const metadata: Metadata = {
+//   title: "skyash",
+// };
 
 export default async function Page() {
   return (
@@ -23,7 +23,7 @@ export default async function Page() {
       <div className="projects h-full">
         {projects.map((project, index) => {
           return (
-            <div className="flex flex-row h-full items-center">
+            <div className="flex flex-row h-full items-center" key={index}>
               <div className="md:w-20 w-10 flex flex-col text-center">
                 {project.tags.map((tag) => {
                   return (

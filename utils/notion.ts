@@ -1,7 +1,6 @@
 import "server-only"
 import { Client } from "@notionhq/client"
 import { BlockObjectResponse, PageObjectResponse,  } from "@notionhq/client/build/src/api-endpoints"
-import { cache } from "react"
 import { NotionAPI } from "notion-client";
 
 
@@ -15,7 +14,7 @@ export const notionClient = new Client({
     auth: process.env.NOTION_TOKEN,
 })
 
-export const getPages:any = cache(()=>{
+export const getPages:any = ()=>{
     return notionClient.databases.query({
         filter:{
             property: "Status",
@@ -25,13 +24,13 @@ export const getPages:any = cache(()=>{
         },
         database_id: process.env.NOTION_DATABASE_ID!,
     }).then((res:any)=>res.results as any)
-})
+}
 
-export const getPageContent = cache((pageId:string)=>{
+export const getPageContent = (pageId:string)=>{
     return notionClient.blocks.children.list({block_id:pageId}).then((res:any)=>res.results as BlockObjectResponse[])
-})
+}
 
-export const getPageBySlug = cache((slug: string)=>{
+export const getPageBySlug = (slug: string)=>{
     return notionClient.databases.query({
         database_id: process.env.NOTION_DATABASE_ID!,
         filter:{
@@ -43,4 +42,4 @@ export const getPageBySlug = cache((slug: string)=>{
             }
         }
     }).then((res:any)=>res.results[0] as PageObjectResponse)
-})
+}
