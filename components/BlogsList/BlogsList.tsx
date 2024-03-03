@@ -13,7 +13,7 @@ export default function Page() {
 
   useEffect(() => {
     async function fetchBlogs(){
-      const res = await fetch(`${process.env.BASE_URL}/notion-api`)
+      const res = await fetch(`/api/notion-api`)
     res.json().then((items)=>{
       setBlogItems(items)
     })
