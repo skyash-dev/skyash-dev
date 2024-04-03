@@ -82,7 +82,7 @@ export default function RootLayout({
                 elsewhere --{" "}
               </span>
               <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
-                <Link href="https://www.x.com/champyash010/" target="_blank">
+                <Link href="https://www.x.com/skyash101/" target="_blank">
                   X
                 </Link>
               </span>
