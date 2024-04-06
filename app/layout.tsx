@@ -87,7 +87,7 @@ export default function RootLayout({
                 </Link>
               </span>
               <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
-                <Link href="https://www.github.com/CHAMP010/" target="_blank">
+                <Link href="https://www.github.com/skyash101/" target="_blank">
                   GitHub
                 </Link>
               </span>
