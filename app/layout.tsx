@@ -86,7 +86,7 @@ function Navbar(currentPath:any){
                 <Link href="/blog/photographs-0e974/">Photography</Link>
               </span>
             </div>
-            <div className="">
+            <div className="md:w-1/2 flex justify-evenly items-center cursor-pointer my-2">
               <span className="text-[#a2a2a2] cursor-default">
                 elsewhere --{" "}
               </span>
