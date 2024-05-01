@@ -22,6 +22,12 @@ body {
 .notion-h{
   color: #FFFFFFE6;
 }
+.notion b{
+  color: #bbbbbb;
+}
 .notion-page-scroller, .notion-frame{
   background-color: #1a1818;
+}
+.notion-quote div{
+  font-size: 16px;
 }

@@ -50,6 +50,7 @@ export default async function Page() {
                   {project.description}
                 </span>
                 <Image
+                className="w-auto h-auto"
                   src={project.image}
                   alt="project"
                   width={500}

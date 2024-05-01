@@ -38,7 +38,16 @@ export default function RootLayout({
         ></link>
       </head>
       <body className="h-full w-full bg-[#1a1818] text-[12px] md:text-[14px]">
-        <div className="flex navbar text-white py-2 font-[50] flex-col md:flex-row items-center md:px-6">
+        <Navbar currentPath={currentPath}></Navbar>
+        {children}
+      </body>
+    </html>
+  );
+}
+
+function Navbar(currentPath:any){
+  return(
+    <div className="flex navbar text-white py-2 font-[50] flex-col md:flex-row items-center md:px-6">
           <Image
             src="/images/skyash.jpeg"
             className="rounded-md hover:scale-110 transition-all"
@@ -47,7 +56,7 @@ export default function RootLayout({
             alt="icon"
           ></Image>
           <div className="flex w-full justify-between items-center flex-col md:flex-row">
-            <div className="w-1/2 flex justify-evenly items-center cursor-pointer my-2">
+            <div className="md:w-1/2 flex justify-evenly items-center cursor-pointer my-2">
               <span
                 className={`${
                   currentPath == "/" ? "bg-gray-600 text-white" : ""
@@ -102,8 +111,5 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        {children}
-      </body>
-    </html>
-  );
+  )
 }
