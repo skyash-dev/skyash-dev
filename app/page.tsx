@@ -12,7 +12,7 @@ export default async function Home() {
         <div className="text-white flex flex-col my-6 py-6 w-[90%] md:w-[36%]">
           <span className="font-semibold text-xl py-2">Yash</span>
           <span className="text-[#a2a2a2] text-base font-light">
-            jack of all trades and master of one! mostly revolving around
+            jack of all trades, also master of one! mostly revolving around
             technology, science and startups. in the loop of planning, building
             and shipping.
           </span>

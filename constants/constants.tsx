@@ -80,14 +80,14 @@ export const projects = [
   //   visit: "https://champ010.github.io/keep.github.io",
   //   id: 7,
   // },
-  {
-    title: "Book Store",
-    description:
-      "The app is developed as Book Store using ReactJS. It is a client project done by me. It is a simple frontend with some functionalities like search book, add to cart, login etc.",
-    image: "/images/project_7.png",
-    tags: ["React", "Node", "CSS", "Mongo"],
-    id: 7,
-  },
+  // {
+  //   title: "Book Store",
+  //   description:
+  //     "The app is developed as Book Store using ReactJS. It is a client project done by me. It is a simple frontend with some functionalities like search book, add to cart, login etc.",
+  //   image: "/images/project_7.png",
+  //   tags: ["React", "Node", "CSS", "Mongo"],
+  //   id: 7,
+  // },
   // {
   //   title: "To-Do List",
   //   description:
@@ -96,12 +96,12 @@ export const projects = [
   //   tags: ["HTML", "CSS", "JS"],
   //   id: 10,
   // },
-  {
-    title: "Food App",
-    description: "Simple Food App Developed through YouTube Tutorial.",
-    image: "/images/project_9.png",
-    tags: ["React", "CSS", "Node", "Mongo", "Socket.io"],
-    visit: "https://onesta-patan.herokuapp.com/",
-    id: 8,
-  },
+  // {
+  //   title: "Food App",
+  //   description: "Simple Food App Developed through YouTube Tutorial.",
+  //   image: "/images/project_9.png",
+  //   tags: ["React", "CSS", "Node", "Mongo", "Socket.io"],
+  //   visit: "https://onesta-patan.herokuapp.com/",
+  //   id: 8,
+  // },
 ];
