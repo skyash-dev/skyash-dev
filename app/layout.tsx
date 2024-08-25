@@ -56,23 +56,23 @@ function Navbar(currentPath: any) {
         alt="icon"
       ></Image>
       <div className="flex w-full justify-between items-center flex-col md:flex-row">
-        <div className="md:w-1/2 flex justify-evenly items-center cursor-pointer my-2">
+        <div className="md:w-1/3 flex justify-evenly items-center cursor-pointer my-2">
           <span
             className={`${
               currentPath == "/" ? "bg-gray-600 text-white" : ""
-            } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
+            } px-2 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
           >
             <Link href="/">Home</Link>
           </span>
           <span
             className={`${
               currentPath == "/work" ? "bg-gray-600 text-white" : ""
-            } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
+            } px-2 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
           >
             <Link href="/work/">Work</Link>
           </span>
           <span
-            className={`px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
+            className={`px-2 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
           >
             <Link href="https://streams.place/skyash">Microblog</Link>
           </span>
@@ -81,24 +81,24 @@ function Navbar(currentPath: any) {
               currentPath == "/blog/photographs-0e974"
                 ? "bg-gray-600  text-white"
                 : ""
-            } px-4 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
+            } px-2 py-1 text-center rounded-md transition-all text-[#a2a2a2] hover:text-white border-none`}
           >
             <Link href="/blog/photographs-0e974/">Photography</Link>
           </span>
         </div>
-        <div className="md:w-1/2 flex justify-evenly items-center cursor-pointer my-2">
+        <div className="md:w-1/3 flex justify-evenly items-center cursor-pointer my-2">
           <span className="text-[#a2a2a2] cursor-default">elsewhere -- </span>
-          <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
+          <span className="px-1 text-[#a2a2a2] cursor-pointer hover:">
             <Link href="https://www.x.com/skyash101/" target="_blank">
               X
             </Link>
           </span>
-          <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
+          <span className="px-1 text-[#a2a2a2]  transition-all hover:text-white cursor-pointer hover:">
             <Link href="https://www.github.com/skyash101/" target="_blank">
               GitHub
             </Link>
           </span>
-          <span className="px-3 text-[#a2a2a2] cursor-pointer hover:">
+          <span className="px-1 transition-all hover:text-white text-[#a2a2a2] cursor-pointer hover:">
             <Link
               href="https://www.linkedin.com/in/yash-soni-62b200237/"
               target="_blank"

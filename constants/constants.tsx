@@ -1,5 +1,6 @@
 export const projects = [
   {
+    year: "2023",
     title: "tabX",
     description:
       "Built a software product for the efficient tab management. It helps users to be super productive and efficient.",
@@ -9,6 +10,7 @@ export const projects = [
     id: 0,
   },
   {
+    year: "2023",
     title: "roadmapAI",
     description:
       "Using React with NextJS developed an app. The App is called roadmapAI and it is a simple roadmap generating app that allows users to generate roadmaps using AI.",
@@ -19,6 +21,7 @@ export const projects = [
     id: 1,
   },
   {
+    year: "2022",
     title: "Dark Warlocks",
     description:
       "Using Vanilla HTML, CSS and JS developed landing page for client from Dark Warlocks",
@@ -28,24 +31,27 @@ export const projects = [
     id: 2,
   },
   {
-    title: "Wheel Roll!",
-    description:
-      "Exploring villages in summer, saw kids playing with wheel and thought to turn it into a game. Developed it using UnityEnging.",
-    image: "/images/project_11.png",
-    tags: ["C#", "Unity", "JS"],
-    visit:
-      "https://play.google.com/store/apps/details?id=com.SkyFlyGames.WheelRoll/",
-    id: 3,
-  },
-  {
+    year: "2022",
     title: "NeuronAIO",
     description:
       "Added some models and features using ReactJS in NeuronAIO electron desktop app.",
     image: "/images/project_2.png",
     tags: ["React"],
+    id: 3,
+  },
+  {
+    year: "2021",
+    title: "Wheel Roll!",
+    description:
+      "Exploring villages in summer, saw kids playing with wheel and thought to turn it into a game. Developed it using UnityEngine.",
+    image: "/images/project_11.png",
+    tags: ["C#", "Unity", "JS"],
+    visit:
+      "https://play.google.com/store/apps/details?id=com.SkyFlyGames.WheelRoll/",
     id: 4,
   },
   {
+    year: "2021",
     title: "Kalam",
     description:
       "From technologies like React and other libraries developed CRM admin dashboard called KALAM having MongoDB as database.",
@@ -63,6 +69,7 @@ export const projects = [
   //   id: 6,
   // },
   {
+    year: "2021",
     title: "CRM Admin",
     description:
       "A React application for businesses to help with Customer Relationship Management. The app contains advance UI elements like dropdown, profile, analytics etc. It allows businesses to keep track of their progress through analytical overview",

@@ -23,39 +23,35 @@ export default async function Page() {
       <div className="projects h-full">
         {projects.map((project, index) => {
           return (
-            <div className="flex flex-row h-full items-center" key={index}>
-              <div className="md:w-20 w-10 flex flex-col text-center">
-                {project.tags.map((tag) => {
-                  return (
-                    <Link
-                      href={project.source ? project.source : ""}
-                      className="my-8 -rotate-90 text-[#a2a2a2] text-sm text-bold hover:text-[#a2a2a2] cursor-pointer leading-10"
-                    >
-                      {tag}
-                    </Link>
-                  );
-                })}
-              </div>
+            <div
+              className="flex flex-row h-full justify-center items-center"
+              key={index}
+            >
               <div
-                className="project pl-4 pr-6 md:px-14 py-12 flex flex-col md:w-1/2"
+                className="project pl-4 pr-6 md:px-14 py-12 flex md:w-1/2"
                 key={index}
               >
-                <Link
-                  href={project.visit ? project.visit : ""}
-                  className=" cursor-pointerpx-2 text-2xl font-medium py-3"
-                >
-                  {project.title}
-                </Link>
-                <span className="text-[#a2a2a2] text-[0.98rem] font-[50] py-3">
-                  {project.description}
+                <span className="text-[#a2a2a2] text-sm text-bold hover:text-[#a2a2a2] cursor-pointer leading-10 py-3 px-2">
+                  {project.year}
                 </span>
-                <Image
-                className="w-auto h-auto"
-                  src={project.image}
-                  alt="project"
-                  width={500}
-                  height={250}
-                />
+                <div className="flex flex-col">
+                  <Link
+                    href={project.visit ? project.visit : ""}
+                    className=" cursor-pointer px-2 text-2xl font-medium py-3"
+                  >
+                    {project.title}
+                  </Link>
+                  <span className="text-[#a2a2a2] text-[0.98rem] font-[50] py-3">
+                    {project.description}
+                  </span>
+                  <Image
+                    className="w-60 rounded-md"
+                    src={project.image}
+                    alt="project"
+                    width={500}
+                    height={250}
+                  />
+                </div>
               </div>
             </div>
           );
