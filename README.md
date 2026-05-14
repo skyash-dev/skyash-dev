@@ -1,4 +1,4 @@
 <h1 align="center">yash</h1>
-<span align="center">jack of all trades, master of some! mostly revolving around technology, science and startups. in the loop of planning, building and shipping.</span>
+<span align="center">jack of all trades, master of some! mostly revolving around technology, science and startups.</span>
 
-[skyash](https://www.skyash.me/)
+[skyash](https://x.com/_skyash)
